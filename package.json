@@ -1,0 +1,22 @@
+{
+  "name": "brex-chat",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "bundle": "metro build --minify false --dev false --out dist/index.js --output-type module --reset-cache src/index.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "packageManager": "pnpm@10.8.0",
+  "devDependencies": {
+    "@babel/core": "^7.28.4",
+    "@babel/preset-env": "^7.28.3",
+    "babel-loader": "^10.0.0",
+    "metro": "^0.83.2",
+    "metro-babel-register": "^0.83.2",
+    "metro-core": "^0.83.2",
+    "metro-runtime": "^0.83.2"
+  }
+}
