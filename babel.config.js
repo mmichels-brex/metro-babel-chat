@@ -10,7 +10,8 @@ module.exports = (api) => {
     presets: [
       "@babel/preset-typescript",
       "@babel/preset-flow",
-      ["@babel/preset-react", { runtime: 'automatic' }]
+      ["@babel/preset-react", { runtime: 'automatic' }],
+      "nativewind/babel"
     ],
     plugins: ["babel-plugin-syntax-hermes-parser"],
   };

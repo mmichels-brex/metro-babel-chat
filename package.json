@@ -7,7 +7,8 @@
     "bundle": "metro build --out dist/index.js --reset-cache src/index.tsx",
     "build": "pnpm bundle && node scripts/build.js",
     "bundle:dev": "pnpm bundle --minify false",
-    "build:dev": "pnpm bundle:dev && node scripts/build.js"
+    "build:dev": "pnpm bundle:dev && node scripts/build.js",
+    "test": "node test.js"
   },
   "packageManager": "pnpm@10.8.0",
   "devDependencies": {
@@ -21,10 +22,19 @@
     "metro": "^0.83.2",
     "metro-babel-register": "^0.83.2",
     "metro-core": "^0.83.2",
-    "metro-runtime": "^0.83.2"
+    "metro-runtime": "^0.83.2",
+    "prettier-plugin-tailwindcss": "^0.5.11",
+    "react-native-web": "^0.21.1",
+    "tailwindcss": "^3.4.17"
   },
   "peerDependencies": {
     "react": "^19.1.1",
     "react-native": "^0.81.4"
+  },
+  "dependencies": {
+    "nativewind": "^4.2.1",
+    "react-native-css-interop": "^0.2.1",
+    "react-native-reanimated": "^4.1.0",
+    "react-native-safe-area-context": "5.4.0"
   }
 }
