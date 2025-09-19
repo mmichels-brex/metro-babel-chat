@@ -4,16 +4,27 @@
     ".": "./dist/index.js"
   },
   "scripts": {
-    "bundle": "metro build --minify false --dev false --out dist/index.js --output-type module --reset-cache src/index.js"
+    "bundle": "metro build --out dist/index.js --reset-cache src/index.tsx",
+    "build": "pnpm bundle && node scripts/build.js",
+    "bundle:dev": "pnpm bundle --minify false",
+    "build:dev": "pnpm bundle:dev && node scripts/build.js"
   },
   "packageManager": "pnpm@10.8.0",
   "devDependencies": {
     "@babel/core": "^7.28.4",
-    "@babel/preset-env": "^7.28.3",
+    "@babel/preset-flow": "^7.27.1",
+    "@babel/preset-react": "^7.27.1",
+    "@babel/preset-typescript": "^7.27.1",
+    "@types/react": "^19.1.13",
     "babel-loader": "^10.0.0",
+    "babel-plugin-syntax-hermes-parser": "^0.32.0",
     "metro": "^0.83.2",
     "metro-babel-register": "^0.83.2",
     "metro-core": "^0.83.2",
     "metro-runtime": "^0.83.2"
+  },
+  "peerDependencies": {
+    "react": "^19.1.1",
+    "react-native": "^0.81.4"
   }
 }

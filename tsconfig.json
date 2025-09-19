@@ -1,0 +1,39 @@
+{
+    "compilerOptions": {
+        "allowJs": true,
+        "esModuleInterop": true,
+        "jsx": "react-jsx",
+        "lib": [
+            "DOM",
+            "ESNext"
+        ],
+        "module": "preserve",
+        "moduleDetection": "force",
+        "moduleResolution": "bundler",
+        "customConditions": [
+            "react-native"
+        ],
+        "noEmit": true,
+        "skipLibCheck": true,
+        "target": "ESNext",
+        "composite": true,
+        "baseUrl": ".",
+        "noImplicitReturns": true,
+        "noUnusedLocals": true,
+        "noUnusedParameters": true,
+        "resolveJsonModule": true,
+        "types": [
+            "react",
+            "react-native"
+        ],
+        "strict": true
+    },
+    "include": [
+        "**/*.ts",
+        "**/*.tsx",
+        "nativewind-env.d.ts"
+    ],
+    "exclude": [
+        "node_modules"
+    ]
+}

@@ -1,4 +1,4 @@
-const { __esModule, sum } = require('./dist/index.js')
+const { sum, MyComponent } = require('./dist/index.js')
 
-console.log(`__esModule`, __esModule)
-console.log(`sum(1,2)`, sum(1,2))
+console.log(`sum(1, 2)`, sum(1, 2))
+// console.log(`MyComponent()`, MyComponent())

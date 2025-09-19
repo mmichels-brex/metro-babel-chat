@@ -7,10 +7,13 @@ const path = require('path');
 module.exports = {
   projectRoot: path.resolve(__dirname),
   resolver: {
-    sourceExts: ['js'],
+    sourceExts: ['js', 'jsx', 'ts', 'tsx', 'json'],
     unstable_enablePackageExports: true,
   },
   transformer: {
+    // This was supposed to unwrap the bundle, but it seems to break the final output
+    // unstable_disableModuleWrapping: true,
+  
     getTransformOptions: async () => ({
       transform: {
         experimentalImportSupport: true,
