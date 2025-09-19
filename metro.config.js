@@ -8,5 +8,14 @@ module.exports = {
   projectRoot: path.resolve(__dirname),
   resolver: {
     sourceExts: ['js'],
+    unstable_enablePackageExports: true,
+  },
+  transformer: {
+    getTransformOptions: async () => ({
+      transform: {
+        experimentalImportSupport: true,
+        inlineRequires: true,
+      },
+    }),
   },
 };

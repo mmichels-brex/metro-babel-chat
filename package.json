@@ -1,14 +1,11 @@
 {
   "name": "brex-chat",
-  "version": "1.0.0",
-  "description": "",
-  "main": "index.js",
+  "exports": {
+    ".": "./dist/index.js"
+  },
   "scripts": {
     "bundle": "metro build --minify false --dev false --out dist/index.js --output-type module --reset-cache src/index.js"
   },
-  "keywords": [],
-  "author": "",
-  "license": "ISC",
   "packageManager": "pnpm@10.8.0",
   "devDependencies": {
     "@babel/core": "^7.28.4",
