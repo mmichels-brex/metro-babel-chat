@@ -1,11 +1,3 @@
-import { Text, View } from "react-native";
-import "../global.css"
-import type { JSX } from 'react';
+import "../global.css";
 
-export function MyComponent(): JSX.Element {
-    return (
-        <View className="bg-amber-500">
-            <Text className="text-brex-blue">Hello world</Text>
-        </View>
-    )
-}
+export { MMButton } from "./MMButton";

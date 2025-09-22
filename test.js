@@ -1,3 +1,3 @@
-const { MyComponent } = require('./dist/index.js')
+const { MMButton } = require('./dist/MMButton.js')
 
-console.log(`MyComponent()`, MyComponent())
+console.log(`MMButton()`, MMButton())

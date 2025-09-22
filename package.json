@@ -1,12 +1,14 @@
 {
   "name": "brex-chat",
+  "main": "./dist/index.js",
   "exports": {
-    ".": "./dist/index.js"
+    ".": "./dist/index.js",
+    "./MMButton": "./dist/MMButton.js"
   },
   "scripts": {
     "bundle": "metro build --out dist/index.js --reset-cache src/index.tsx",
     "build": "pnpm bundle && node scripts/build.js",
-    "bundle:dev": "pnpm bundle --minify false",
+    "bundle:dev": "pnpm bundle --minify false --output-type module",
     "build:dev": "pnpm bundle:dev && node scripts/build.js",
     "test": "node test.js"
   },
